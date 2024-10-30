@@ -1,0 +1,49 @@
+# list utama ; kendaraan
+kendaraan = ["beat karbu", "motor", "1000cc", "biru", "roda dua"]
+
+# mencetak isi dari list kendaraan
+print (kendaraan)
+
+# menambahkan value di ujung list dengan method (append)
+
+# append 1 (harga kendaraan)
+kendaraan.append ("1.000.000.000")
+
+# append 2 (tipe kendaraan)
+kendaraan.append ("matic")
+
+# cetak nilai kendaraan 
+print (kendaraan)
+
+# sisipkan nilai untuk tipe kendaraan 
+kendaraan.insert (2, "Honda")
+
+# cetak nilai setelah perubahan
+print (kendaraan)
+
+Pilihan = int(input("""pilih nomor pilihan:
+1. Menghitung Luas Persegi
+2. Menghitung Luas Lingkaran
+3. Menghitung Luas Segitiga
+"""))
+ 
+match Pilihan :
+    case 1:
+        print ("Menghitung Luas Persegi")
+        s = int(input("Masukan Nilai Sisi : "))
+        luaspersegi = s * s
+        print (f"Luas Persegi dengan sisi {s}, adalah {luaspersegi}")
+    case 2:
+        print ("Menghitung Luas Lingkaran")
+        phi = 3.14
+        r = int(input("Masukan Nilai jari-jari: "))
+        luaslingkaran = phi * r**2
+        print (f"Luas Lingkaran dengan sisi {r}, adalah {luaslingkaran}")
+    case 3:
+        print ("Menghitung Luas Segitiga")
+        a = int(input("Masukan nilai alas: "))
+        t = int(input("Masukan nilai tinggi: "))
+        luassegitiga = 1/2 * a * t
+        print (f"Luas segitiga dengan alas {a} dan tinggi {t}, adalah {luassegitiga}")
+    case _:
+        print ("Invalid")
